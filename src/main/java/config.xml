@@ -11,12 +11,32 @@
 		<property name="cid">
 			<value>12</value>
 		</property>
-		
+
 		<property name="cname">
 			<value>bjs</value>
 		</property>
 	</bean>
 
+
+	<bean class="Com.SpringCore.Spring.City" name="CityData">
+		<property name="cid">
+			<value>12</value>
+		</property>
+
+		<property name="CityName">
+			<value>pune</value>
+		</property>
+		
+		<property name="State">
+			<value>Maharatra</value>
+		</property>
+		
+		<property name="population">
+			<value>5000000</value>
+		</property> 
+		
+		
+	</bean>
 </beans>
 	
 	
