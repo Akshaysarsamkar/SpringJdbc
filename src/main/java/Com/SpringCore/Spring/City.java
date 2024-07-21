@@ -1,7 +1,10 @@
 package Com.SpringCore.Spring;
 
-//the class which containes setter,getter and no logic will be their is known as pojo class  
+//the class which containes setter,getter and no logic will be their is known as pojo class 
 
+//bean :- 1:-it implement the java.io.serialixable 
+//        2:- it have default constructors 
+//        3:- allow setter and getter to acess the properties
 
 public class City {
 
@@ -9,6 +12,8 @@ public class City {
 	private String CityName;
 	private String State;
 	private int population;
+	
+	
 	public int getCid() {
 		return cid;
 	}
