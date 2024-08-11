@@ -38,25 +38,31 @@
 
 	</bean>
 
+	<!-- without value tag -->
+
 	<bean class="Com.SpringCore.Spring.Student" name="student">
 
-		<property name="sname">
-			<value>Akshay</value>
-		</property>
-		
-		<property name="sid">
-			<value>12</value>
-		</property>
-		
-		<property name="per">
-			<value>85.23</value>
-		</property>
-		
-		<property name="collage">
-			<value>bjs</value>
-		</property>
+		<property name="sname" value="Akshay" />
+
+
+		<property name="sid" value="45" />
+
+
+		<property name="per" value="85.32" />
+
+
+		<property name="collage" value="bjs" />
 
 	</bean>
+
+	<!-- P Schema -->
+	<bean class="Com.SpringCore.Spring.PSchemaExample" name="example" p:id="85"
+		p:name="Samir" />
+
+	<bean class="Com.SpringCore.Spring.PSchemaExample" name="example1" p:id="5"
+		p:name="Samira" />
+
+
 </beans>
 	
 	
