@@ -26,16 +26,36 @@
 		<property name="CityName">
 			<value>pune</value>
 		</property>
-		
+
 		<property name="State">
 			<value>Maharatra</value>
 		</property>
-		
+
 		<property name="population">
 			<value>5000000</value>
-		</property> 
+		</property>
+
+
+	</bean>
+
+	<bean class="Com.SpringCore.Spring.Student" name="student">
+
+		<property name="sname">
+			<value>Akshay</value>
+		</property>
 		
+		<property name="sid">
+			<value>12</value>
+		</property>
 		
+		<property name="per">
+			<value>85.23</value>
+		</property>
+		
+		<property name="collage">
+			<value>bjs</value>
+		</property>
+
 	</bean>
 </beans>
 	

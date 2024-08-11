@@ -19,10 +19,15 @@ public class App
 //     System.out.println(c.getCname());
         
         
-        ApplicationContext c = new ClassPathXmlApplicationContext("config.xml");
-        City city = (City) c.getBean("CityData");
-        System.out.println(city);
+//        ApplicationContext c = new ClassPathXmlApplicationContext("config.xml");
+//        City city = (City) c.getBean("CityData");
+//        System.out.println(city);
+//        
+//        System.out.println("Population of the " + city.getCityName() + " is:" + city.getPopulation());
         
-        System.out.println("Population of the " + city.getCityName() + " is:" + city.getPopulation());
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        Student s = (Student) context.getBean("student");
+        System.out.println("Student name is: " + s.getSname());
+        System.out.println("Student Collage "+ s.getCollage());
     }
 }
