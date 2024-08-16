@@ -81,7 +81,30 @@
     
    
    </bean>
-
+   
+   <bean class="Com.SpringCore.InjectCollationtypes.SetExample" name="setex">
+    <property name="id">
+       <value>12</value>
+    </property>
+     <property name="phone">
+        <set>
+          <value>963258</value>
+          <value>852369</value>
+          <value>852369</value>
+        </set>
+     </property>
+    
+    </bean>
+          
+    <bean class="Com.SpringCore.InjectCollationtypes.MapExample" name="mapex"> 
+           <property name="id" value="1" />
+           <property name="subjectmark">
+                 <map>
+                      <entry key="ENGLISH" value="67" />
+                      <entry key="MATH" value="57" />
+                 </map>
+           </property>
+    </bean>
 
 
 </beans>
