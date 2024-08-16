@@ -105,6 +105,23 @@
                  </map>
            </property>
     </bean>
+    
+    
+    <bean class="ref.Student" name="s"> 
+       <property name="id" value="12"/>
+       <property name="name" value="Akshay"/>
+    </bean>
+    
+    
+     <bean class="ref.Collage" name="col"> 
+       <property name="id" value="1"/>
+       <property name="cname" value="BJS"/>
+        <property name="stu">
+         <ref bean="s"/>
+        </property>
+       
+    </bean>
+    
 
 
 </beans>
