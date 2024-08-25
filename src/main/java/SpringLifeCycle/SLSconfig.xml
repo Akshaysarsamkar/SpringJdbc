@@ -12,7 +12,11 @@
       </bean>
 
 
-
+      <bean class="SpringLifeCycle.LifeCycleWithInterface" name="interface">
+          <property name="name" value="Akshaykumar"/>
+          <property name="age" value="87" />
+      </bean>
+      
 </beans>
 	
 	
