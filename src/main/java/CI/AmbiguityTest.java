@@ -6,6 +6,8 @@ package CI;
          2:- if in class string constructoe is there the call string constructor by then they can not check ordernof constructor 
          3:- if u give type in xml file then as per type constructor is call 
          
+    
+         
          note :-
           in xml file we can give constructor parameter indexing as in this indexing start from 0
             like int a ;
@@ -17,9 +19,6 @@ package CI;
         </bean>
         
  */
-
-
-
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
