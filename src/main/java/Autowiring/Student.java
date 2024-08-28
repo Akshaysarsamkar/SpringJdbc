@@ -28,10 +28,4 @@ public class Student {
 		return "Student [c=" + c + "]";
 	}
 
-	
-
-	
-	
-	
-
 }

@@ -7,7 +7,7 @@ public class Collage {
 	
 	public Collage() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	public int getCid() {
 		return cid;
@@ -23,9 +23,10 @@ public class Collage {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return "Collagebid is :" + cid + " collage name: " + cname;
+		return "Collage [cid=" + cid + ", cname=" + cname + "]";
 	}
+	
+	
 	
 	
 	

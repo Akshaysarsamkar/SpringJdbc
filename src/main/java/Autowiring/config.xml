@@ -8,15 +8,19 @@
 						https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
 
 
-	<bean class="Autowiring.Collage" name="Collage">
+	<bean class="Autowiring.Collage" name="c">
 		<property name="cid" value="12" />
 		<property name="cname" value="bjs" />
 	</bean>
-	
+
 	<bean class="Autowiring.Student" name="stu" autowire="byName" />
-	   
 
-
+	<bean class="Autowiring.vote" name="totalvote">
+	    <property name="v" value="1000" />
+	</bean>
+	
+		<bean class="Autowiring.Candidate" name="can" autowire="byName" />
+	
 
 </beans>
 	
