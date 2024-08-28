@@ -7,23 +7,17 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 						https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
 
-<context:annotation-config />
-<!-- 
-	<bean class="SpringLifeCycle.SpringLifeCycleWithXml" name="slc"
-		init-method="init" destroy-method="destroy">
-		<property name="Age" value="84" />
+
+	<bean class="Autowiring.Collage" name="Collage">
+		<property name="cid" value="12" />
+		<property name="cname" value="bjs" />
 	</bean>
+	
+	<bean class="Autowiring.Student" name="stu" autowire="byName" />
+	   
 
 
-	<bean class="SpringLifeCycle.LifeCycleWithInterface" name="interface">
-		<property name="name" value="Akshaykumar" />
-		<property name="age" value="87" />
-	</bean>
--->
 
-	<bean class="SpringLifeCycle.BeanLifeCycleWithAnotations" name="annotation">
-		<property name="age" value="8" />
-	</bean>
 </beans>
 	
 	
