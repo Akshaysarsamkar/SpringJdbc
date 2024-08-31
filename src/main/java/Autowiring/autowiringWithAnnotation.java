@@ -3,11 +3,16 @@ package Autowiring;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class test {
+public class autowiringWithAnnotation {
+
 	public static void main(String[] args) {
+
 		ApplicationContext context = new ClassPathXmlApplicationContext("Autowiring/config.xml");
-		Candidate s = (Candidate) context.getBean("can",Candidate.class);
-		System.out.println(s);
-		System.out.println("total vote " + s.getTotalvote() );
+		
+		Owner o1 = (Owner) context.getBean("owner");
+		
+		System.out.println(o1);
+
 	}
+
 }

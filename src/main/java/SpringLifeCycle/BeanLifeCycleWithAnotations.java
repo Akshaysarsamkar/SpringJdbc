@@ -1,24 +1,25 @@
 package SpringLifeCycle;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class BeanLifeCycleWithAnotations implements InitializingBean, DisposableBean {
+public class BeanLifeCycleWithAnotations  {
 
 	private int age;
 
-	@Override
-	public void destroy() throws Exception {
-		System.out.println("destory");
-		
+	@PostConstruct
+	public void init() {
+		System.out.println("init method");
 	}
 
-	@Override
-	public void afterPropertiesSet() throws Exception {
-		System.out.println("init");
-		
+	@PreDestroy
+	public void destory() {
+		System.out.println("destory method");
 	}
-
+	
 	public int getAge() {
 		return age;
 	}
