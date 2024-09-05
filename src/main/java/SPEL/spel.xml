@@ -10,6 +10,12 @@
 
 	<context:component-scan base-package="SPEL" />
 
+	<util:list id="list">
+		<value>Beed</value>
+		<value>pune</value>
+		<value>Jalna</value>
+	</util:list>
+
 
 </beans>
 
