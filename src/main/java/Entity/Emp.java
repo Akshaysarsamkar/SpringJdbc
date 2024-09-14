@@ -44,4 +44,9 @@ public class Emp {
 		this.salary = salary;
 	}
 
+	@Override
+	public String toString() {
+		return "Emp [empid=" + empid + ", empname=" + empname + ", address=" + address + ", salary=" + salary + "]";
+	}
+
 }

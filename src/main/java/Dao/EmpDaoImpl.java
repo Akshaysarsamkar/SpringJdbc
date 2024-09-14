@@ -1,9 +1,12 @@
 package Dao;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 import Entity.Emp;
 
+@Configuration
 public class EmpDaoImpl implements EmpDao {
 
 	private JdbcTemplate jdbcTemplate;
@@ -22,6 +25,14 @@ public class EmpDaoImpl implements EmpDao {
 
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	@Override
+	public Emp getemp(int id) {
+		String q = "select * from Emp where id = ?";
+		RowMapper<Emp> rowMapperImpl = new RowMapperImpl();
+		Emp emp = this.jdbcTemplate.queryForObject(q,rowMapperImpl,id);
+		return emp;
 	}
 
 }
