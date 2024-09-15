@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config />
+
+<context:annotation-config />
+<!-- 
+	<bean class="SpringLifeCycle.SpringLifeCycleWithXml" name="slc"
+		init-method="init" destroy-method="destroy">
+		<property name="Age" value="84" />
+	</bean>
+
+
+	<bean class="SpringLifeCycle.LifeCycleWithInterface" name="interface">
+		<property name="name" value="Akshaykumar" />
+		<property name="age" value="87" />
+	</bean>
+-->
+
+	<bean class="SpringLifeCycle.BeanLifeCycleWithAnotations" name="annotation">
+		<property name="age" value="8" />
+	</bean>
+</beans>
+	
+	
+	
+ 

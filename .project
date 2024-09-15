@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>com.spring.jdbc</name>
+=======
+	<name>Spring</name>
+>>>>>>> 8e34aeeb9801121e01b51332f36d546e26bbda54
 	<comment></comment>
 	<projects>
 	</projects>

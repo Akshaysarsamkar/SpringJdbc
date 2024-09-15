@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config />
+
+
+	<!--
+	<bean class="Autowiring.Collage" name="c">
+		<property name="cid" value="12" />
+		<property name="cname" value="bjs" />
+	</bean>
+
+	<bean class="Autowiring.Student" name="stu" autowire="byName" />
+
+	<bean class="Autowiring.vote" name="totalvote1">
+		<property name="v" value="1000" />
+	</bean>
+
+	<bean class="Autowiring.Candidate" name="can" autowire="byType" />
+ 
+ -->
+
+	<context:annotation-config />
+	<bean class="Autowiring.Car" name="car">
+		<property name="cid" value="12" />
+		<property name="carname" value="BMW" />
+	</bean>
+
+	<bean class="Autowiring.Car" name="car1">
+		<property name="cid" value="1" />
+		<property name="carname" value="ODDI" />
+	</bean>
+
+	<bean class="Autowiring.Owner" name="owner" />
+
+</beans>
+	
+	
+	
+ 

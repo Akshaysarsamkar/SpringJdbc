@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
+
+        <bean class="CI.Company" name="company">
+                     <constructor-arg value="12"/>
+                      <constructor-arg value="IBM"/>
+        </bean>
+
+       <bean class="CI.Person" name="person">
+                <constructor-arg value="12"/>
+                 <constructor-arg value="Akshay"/>
+                 <constructor-arg>
+                         <ref bean="company"/>
+                  </constructor-arg>
+        </bean>
+  
+        <bean class="CI.AmbiguityProblem" name="ambiguity">
+              <constructor-arg value="12" type="double" index="1"/>
+               <constructor-arg value="42" type="double" index="0"/>
+        </bean>
+
+
+
+</beans>
+	
+	
+	
+ 
